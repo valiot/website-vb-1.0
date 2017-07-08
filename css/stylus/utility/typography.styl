@@ -1,0 +1,39 @@
+// ======================================================//
+// Text utilities
+// ======================================================//
+$text-white
+  color white
+  
+$text-center
+  text-align center
+
+p
+  margin-top 0
+  margin-bottom 0
+  font-size 18px
+  color $secondary
+  line-height 30px
+  
+  & + &
+    margin-top 1rem
+
+.title
+$title
+  margin-top 0
+  margin-bottom 0
+  font-size 2rem
+  font-weight 300
+  color $primary
+  letter-spacing 0
+
+.title--main
+  @extend $title
+  width 50%
+  font-size responsive 1.5rem 2.25rem
+  line-height 1.2
+  color white
+  
+.title--mainProject
+  @extend $title
+  color white
+  z-index 10
