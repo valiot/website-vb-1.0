@@ -1,0 +1,99 @@
+.main
+  width 100%
+  height 100vh
+  display flex
+  align-items center
+  justify-content center
+  background-image url('/img/main-bg.jpg')
+  background-image linear-gradient(-180deg, rgba($black, 0) -20%, $black 100%), url('/img/main-bg.jpg')
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  text-align center
+  
+.about
+  height 100vh
+  padding-top 4rem
+  padding-bottom 4rem
+  display flex
+  flex-direction column
+  justify-content center
+  align-items flex-start
+  
+  &-info
+    margin-top 6rem
+    lost-column 1/2 0 0
+    lost-offset 3/12
+    
+.events
+  padding-top 4rem
+  padding-bottom 8rem
+  display flex
+  flex-direction column
+  justify-content center
+  align-items flex-start
+  
+.events-container
+  display flex
+  margin-top 6rem
+
+.events-item
+  width 50%
+  height 60vh
+  padding-right 4rem
+  padding-left 4rem
+  display flex
+  align-items flex-end
+  
+.event-info
+  position relative
+  min-height 60%
+  padding 2rem
+  transform translateY(30%)
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  border 2px solid $primary
+  
+.event-description
+  margin-top 2rem
+  
+.event-01
+.event-02
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  text-align center
+  background-image linear-gradient(-180deg, rgba($black, 0) -20%, $black 100%), url('/img/events/event-01.jpg')
+  
+.event-02
+  background-image linear-gradient(-180deg, rgba($black, 0) -20%, $black 100%), url('/img/events/event-02.jpg')
+  
+.collaborators
+  padding-top 6rem
+  padding-bottom 6rem
+  display flex
+  flex-direction column
+  justify-content center
+  align-items flex-start
+  
+.logosContainer
+  wrapped()
+  margin-top 6rem
+  display flex
+  flex-wrap wrap
+  justify-content center
+  
+.contact
+  wrapped()
+  position relative
+  display flex
+  align-items center
+  justify-content flex-end
+  background url('/img/footer-bg.png') center left no-repeat
+  background-size contain
+  height 110vh
+
+.contactForm
+  lost-column 5/12 0 0

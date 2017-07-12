@@ -11,7 +11,7 @@ p
   margin-top 0
   margin-bottom 0
   font-size 18px
-  color $secondary
+  color white
   line-height 30px
   
   & + &
@@ -19,21 +19,34 @@ p
 
 .title
 $title
+  font-family 'Oswald', sans-serif
   margin-top 0
   margin-bottom 0
-  font-size 2rem
-  font-weight 300
-  color $primary
-  letter-spacing 0
-
-.title--main
-  @extend $title
-  width 50%
-  font-size responsive 1.5rem 2.25rem
-  line-height 1.2
-  color white
+  font-size 2.5rem
+  text-transform uppercase
+  letter-spacing 3px
   
-.title--mainProject
-  @extend $title
-  color white
-  z-index 10
+  & + p
+    margin-top 2rem
+      
+  span
+    padding 0 1rem
+    background-color $primary
+    
+.title--main
+  line-height 4rem
+
+.title--bg
+  lost-offset 2/12
+  padding-left 2rem
+  padding-right 2rem
+  background-color $primary
+  
+.subtitle
+  font-size 1.5rem
+  font-weight 300
+  font-style italic
+  color $primary
+  
+  & + p
+    margin-top 2rem

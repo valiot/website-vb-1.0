@@ -5,15 +5,17 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.min.css">
 </head>
 <body>
   <header class="mainHeader">
     <a class="logo logo--mainHeader" href="#0">
-      <img src="img/logo-vb.svg" alt="">
+      <img src="img/logo.svg" alt="">
     </a>
     <nav class="mainNav">
-      <a class="mainNav-item" href="#0">Inicio</a>
+      <a class="mainNav-item is-active" href="#0">Inicio</a>
       <a class="mainNav-item" href="#0">Eventos</a>
       <a class="mainNav-item" href="#0">Colaboradores</a>
       <a class="mainNav-item" href="#0">Contacto</a>
@@ -21,96 +23,100 @@
   </header>
 
   <main class="main">
-    <h1>Creemos que la innovación es parte de una colaboración social.</h1>
+    <h1 class="title title--main">Creemos que la <span>innovación</span> <br> es parte de una <span>colaboración social</span></h1>
   </main>
 
   <section class="about">
-    <h2 class="title">¿Qué es Venture Beers?</h2>
+    <h2 class="title title--bg">¿Qué es Venture Beers?</h2>
 
     <div class="about-info">
-      <p>Queremos catalizar el ecosistema emprendedor/innovador en Monterrey  para promover la colaboración  entre inversionistas y startups.</p>
+      <p class="subtitle">Queremos catalizar el ecosistema innovador en Monterrey  para promover la colaboración  entre inversionistas y startups.</p>
 
       <p>Venture Beers es un evento que busca generar conexiones entre innovadores, startups, empresas e inversionistas quitándole la formalidad con un par de cervezas para detonar conversaciones en un ambiente relajado y colaborar en conjunto para que se sumen a la misión de encontrar los caminos para impulsar al ecosistema de innovación y el emprendimiento.</p>
     </div>
   </section>
 
   <section class="events">
-    <h2 class="title">Eventos pasados</h2>
+    <h2 class="title title--bg">Eventos pasados</h2>
 
-    <div class="events">
-      <div class="events-item">
+    <div class="events-container">
+      <div class="events-item event-01">
         <div class="event-info">
-          <h3 class="event-title">Venture Beers 27 Abril 2017</h3>
-          <p class="event-description">El pasado 27 de abril del 2017 se realizó la segunda sesión de Venture Beers en el cual  estuvieron directivos de empresas importantes de la ciudad.</p>
-          <a href="btn btn-primary">Ver más</a>
-        </div>
-      </div>
-
-      <div class="events-item">
-        <div class="event-info">
-          <h3 class="event-title">Venture Beers Octubre 2016 </h3>
+          <h3 class="title">Octubre 2016 </h3>
           <p class="event-description">En las instalaciones de IOS Offices nació Venture Beers, un evento que busca ser un espacio en el que se den las conversaciones adecuadas para que sucedan cosas increíbles.</p>
-          <a href="btn btn-primary">Ver más</a>
+          <a class="btn btn--primary" href="#">Ver más</a>
         </div>
       </div>
+      
+      <div class="events-item event-02">
+        <div class="event-info">
+          <h3 class="title">Abril 2017</h3>
+          <p class="event-description">El pasado 27 de abril del 2017 se realizó la segunda sesión de Venture Beers en el cual  estuvieron directivos de empresas importantes de la ciudad.</p>
+          <a class="btn btn--primary" href="#">Ver más</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section class="collaborators">
-    <h2 class="title">Colaboradores</h2>
+    <h2 class="title title--bg">Colaboradores</h2>
 
     <div class="logosContainer">
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
       <a class="logo logo--container" href="#0">
-        <img src="logo.svg" alt="">
+        <img src="/img/collaborator-logo.svg" alt="">
+      </a>
+      <a class="logo logo--container" href="#0">
+        <img src="/img/collaborator-logo.svg" alt="">
       </a>
     </div>
   </section>
 
   <section class="contact">
     <div class="contactForm">
-      <h3 class="title title--contact">¿Quieres ser parte de Venture Beers?</h3>
+      <h3 class="title title--contact">¿Quieres ser parte <br>de Venture Beers?</h3>
       <p>Tienes alguna sugerencia, idea loca o ganas de colaborar con nosotros por favor háznoslo saber para platicar y darle seguimiento.</p>
       <form class="form form--contact" action="">
-        <input type="text" placeholder="Nombre">
-        <input type="mail" placeholder="Email">
-        <textarea name="message" rows="8" cols="80" placeholder="Mensaje"></textarea>
-        <input type="submit" name="Enviar" id="btn btn-form">
+        <input class="input" type="text" placeholder="Nombre">
+        <input class="input" type="mail" placeholder="Email">
+        <textarea class="input" name="message" rows="8" cols="80" placeholder="Mensaje"></textarea>
+        <input class="btn btn--primary" type="submit" name="submit" value="Enviar">
       </form>
     </div>
+    <footer class="footer">
+      <div class="socialMedia">
+        <a class="socialMedia-icon" href="#0">
+          <img src="img/icon-facebook.svg" alt="">
+        </a>
+        <a class="socialMedia-icon" href="#0">
+          <img src="img/icon-instagram.svg" alt="">
+        </a>
+      </div>
+
+      <p>2017 Venture Beers - All rights Reserved</p>
+    </footer>
   </section>
 
-  <footer class="footer">
-    <div class="socialMedia">
-      <a class="socialMedia-icon" href="#0">
-        <img src="img/fb-logo.svg" alt="">
-      </a>
-      <a class="socialMedia-icon" href="#0">
-        <img src="img/insta-logo.svg" alt="">
-      </a>
-    </div>
-
-    <p>2017 Venture Beers - All rights Reserved</p>
-  </footer>
 </body>
 </html>
