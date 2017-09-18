@@ -36,7 +36,7 @@ gulp.task('server', function() {
         baseDir: "./"
     },
     port: 3000,
-    notify: false,
+    notify: false
   });
 
   gulp.watch(paths.html).on('change', reload);
@@ -47,11 +47,11 @@ gulp.task('server', function() {
 // Stylus Task - Compiles stylus file
 gulp.task('stylus', function() {
   var stylus_options = {
-    use : [     
+    use : [
         rupture()
     ]
   }
-  
+
   return gulp.src(paths.styles)
     .pipe(stylus(stylus_options))
     .pipe(gulp.dest(paths.css));
