@@ -3,7 +3,7 @@
 // ======================================================//
 $text-white
   color white
-  
+
 $text-center
   text-align center
 
@@ -13,7 +13,7 @@ p
   font-size 18px
   color white
   line-height 30px
-  
+
   & + &
     margin-top 1rem
 
@@ -25,15 +25,22 @@ $title
   font-size 2.5rem
   text-transform uppercase
   letter-spacing 3px
-  
+
   & + p
     margin-top 2rem
-      
+
   span
     padding 0 1rem
     background-color $primary
-    
+
 .title--main
+  line-height 4rem
+
+.title--event
+  align-items flex-start
+  lost-offset 2/12
+  padding-left 2rem
+  padding-right 2rem
   line-height 4rem
 
 .title--bg
@@ -41,12 +48,12 @@ $title
   padding-left 2rem
   padding-right 2rem
   background-color $primary
-  
+
 .subtitle
   font-size 1.5rem
   font-weight 300
   font-style italic
   color $primary
-  
+
   & + p
     margin-top 2rem
