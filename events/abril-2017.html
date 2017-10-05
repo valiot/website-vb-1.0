@@ -22,7 +22,7 @@
     </nav>
   </header>
 
-  <main class="main main--octubre-2016">
+  <main class="main main--abril-2017">
     <h2 class="title title--event">Venture beers<br><span>27 de abril 2017</span></h2>
     <p class="about-event">En esta edición realizamos una difusión dirigida a atraer más corporativos, más startups y jóvenes emprendedores de la ciudad con el objetivo crecer la comunidad y generar más espectativa alrededor de la comunidad Venture Beers</p>
   </main>
@@ -71,9 +71,28 @@
   </section>
 
   <section class="gallery" id="gallery">
-  </section>
-
-  <section class="gallery" id="gallery">
+    <div class="gallery-slider">
+      <div><img src="/img/events/abril-01.jpg" alt=""></div>
+      <div><img src="/img/events/abril-02.jpg" alt=""></div>
+      <div><img src="/img/events/abril-03.jpg" alt=""></div>
+      <div><img src="/img/events/abril-04.jpg" alt=""></div>
+      <div><img src="/img/events/abril-05.jpg" alt=""></div>
+      <div><img src="/img/events/abril-06.jpg" alt=""></div>
+      <div><img src="/img/events/abril-07.jpg" alt=""></div>
+      <div><img src="/img/events/abril-01.jpg" alt=""></div>
+      <div><img src="/img/events/abril-02.jpg" alt=""></div>
+    </div>
+    <div class="gallery-nav">
+      <div><img src="/img/events/abril-01-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-02-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-03-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-04-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-05-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-06-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-07-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-01-small.jpg" alt=""></div>
+      <div><img src="/img/events/abril-02-small.jpg" alt=""></div>
+    </div>
   </section>
 
   <section class="logos" id="sponsors">
@@ -107,14 +126,46 @@
   <footer class="footer">
     <div class="socialMedia">
       <a class="socialMedia-icon" href="#0">
-        <img src="img/fb-logo.svg" alt="">
+        <img src="/img/icon-facebook.svg" alt="">
       </a>
       <a class="socialMedia-icon" href="#0">
-        <img src="img/insta-logo.svg" alt="">
+        <img src="/img/icon-instagram.svg" alt="">
       </a>
     </div>
 
     <p>2017 Venture Beers - All rights Reserved</p>
   </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/js/main.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.gallery-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="/img/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="/img/arrow-next.svg" alt=""></button>',
+        asNavFor: '.gallery-nav'
+      });
+      $('.gallery-nav').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.gallery-slider',
+        centerMode: true,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 </html>
