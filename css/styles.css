@@ -309,9 +309,6 @@ p + p {
   line-height: 4rem;
 }
 .title--event {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   margin-left: calc(99.9% * (-2/12 * -1) - (30px - 30px * (-2/12 * -1)) + 30px) !important;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -422,9 +419,23 @@ figure img {
 .input + .input {
   margin-top: 1rem;
 }
+.gallery {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery-slider {
+  width: 100%;
+}
 .gallery-slider .slick-slide {
   height: 85vh;
   overflow: hidden;
+}
+.gallery-nav {
+  width: 100%;
 }
 .gallery-nav .slick-slide {
   height: 15vh;
